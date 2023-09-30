@@ -30,7 +30,7 @@ func main() {
 		DogumYili:  1111,
 	}
 
-	verify, err := tckimlik.Dogrula(identity) // returns bool
+	verify, err := tckimlik.Dogrula(identity) // returns bool, err
 	if err != nil {
 		fmt.Println("Error:", err)
 	}
