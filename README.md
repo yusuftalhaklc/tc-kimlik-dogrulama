@@ -30,11 +30,14 @@ func main() {
 		DogumYili:  1111,
 	}
 
-	verify := tckimlik.Dogrula(identity) // returns bool
+	verify, err := tckimlik.Dogrula(identity) // returns bool
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
 	fmt.Println(verify)
 }
 ```
 ```bash
 $ go run example.go
-true
+false
 ```
